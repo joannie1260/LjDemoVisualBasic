@@ -17,8 +17,10 @@
         Dim idProperty = "12233793"
         Dim urlProperty = "https://als.id-3.net/api2/property/getrawdata?id="
         Dim propertyInfos = New RestClient(urlProperty)
+
         Dim request = New RestRequest(Method.[Get])
         Dim response As RestResponse = Execute(request)
+        Dim json as String = JsonConvert.SterializeObject(response)
         Console.WriteLine(response)
 
     End Sub

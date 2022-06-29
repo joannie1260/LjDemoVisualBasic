@@ -1,4 +1,4 @@
-class MergeInfos {
+export class MergeInfos {
 
 constructor(find, replace) {
     this.find = find
