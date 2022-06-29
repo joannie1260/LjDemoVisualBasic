@@ -1,0 +1,243 @@
+﻿
+:root {
+    --baseColor: #606468;
+    --iconFill: var(--baseColor);
+    --htmlFontSize: 100%;
+    // BODY
+    --bodyBackgroundColor: #2c3338;
+    --bodyColor: var(--baseColor);
+    --bodyFontFamily: "Open Sans";
+    --bodyFontFamilyFallback: sans-serif;
+    --bodyFontSize: 0.875rem;
+    --bodyFontWeight: 400;
+    --bodyLineHeight: 1.5;
+    // ID INPUT
+    --idBorderRadus: 0.25rem;
+    --idColor: #eee;
+    --idInputBackgroundColor: #3b4148;
+    --idInputHoverBackgroundColor: #434a52;
+    --idLabelBackgroundColor: #363b41;
+    --idSubmitBackgroundColor: #f90;
+    --idSubmitColor: #eee;
+    --idSubmitHoverBackgroundColor: #f90;
+    --anchorColor: #eee;
+    --formGap: 0.875rem;
+}
+
+.align {
+    display: grid;
+    place-items: center;
+}
+
+.grid {
+    inline-size: 90%;
+    margin-inline: auto;
+    max-inline-size: 20rem;
+}
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+.icons {
+    display: none;
+}
+
+.icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: var(--iconFill);
+    inline-size: 1em;
+    vertical-align: middle;
+}
+
+
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: var(--htmlFontSize);
+}
+
+body {
+    background-color: var(--bodyBackgroundColor);
+    color: var(--bodyColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-size: var(--bodyFontSize);
+    font-weight: var(--bodyFontWeight);
+    line-height: var(--bodyLineHeight);
+    margin: 0;
+    min-block-size: 100vh;
+}
+
+
+a {
+    color: var(--anchorColor);
+    outline: 0;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+//   FORM SECTION
+h1, p {
+    text-align: center;
+    color: var(--anchorColor);
+}
+
+p {
+    color: var(--baseColor);
+}
+
+
+
+input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+.form {
+    display: grid;
+    gap: var(--formGap);
+
+    & input[type="text"] {
+        inline-size: 100%;
+    }
+}
+
+
+.form__field {
+    display: flex;
+}
+
+.form__input {
+    flex: 1;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+
+.id {
+    color: var(--idColor);
+
+    & label,
+    & input[type="text"],
+    & button {
+        border-radius: var(--idBorderRadus);
+        padding: 1rem;
+    }
+
+    & label {
+        background-color: var(--idLabelBackgroundColor);
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        padding-inline: 1.25rem;
+    }
+}
+
+
+.id input[type="text"] {
+    background-color: var(--idInputBackgroundColor);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+
+.id input[type="text"]:focus,
+.id input[type="text"]:hover {
+    background-color: var(--idInputHoverBackgroundColor);
+}
+
+.id button {
+    color: var(--bodyBackgroundColor);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.id button:focus,
+.id button:hover {
+    background-color: var(--idSubmitBackgroundColor);
+    color: var(--anchorColor);
+    cursor: pointer;
+}
+
+
+p {
+    margin-block: 1.5rem;
+}
+
+.text--center {
+    text-align: center;
+}
+
+#loading {
+
+    h1 {
+        color: var(--anchorColor);
+        padding-top: 100px;
+        margin: 0px;
+    }
+
+    p {
+        margin-top: 0px;
+    }
+
+    .loader {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--idSubmitBackgroundColor);
+            animation: bounce .9s alternate infinite;
+            margin: 10px;
+        }
+
+        .circle:nth-child(2) {
+            animation-delay: .16s;
+        }
+
+        .circle:nth-child(3) {
+            animation-delay: .32s;
+        }
+
+        @keyframes bounce {
+            /* from {
+                tranform: scaleX(1.25);
+            }
+               */
+            to {
+                transform: translateY(-50px) scaleX(1)
+            }
+        }
+    }
+}

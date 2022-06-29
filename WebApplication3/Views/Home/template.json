@@ -1,0 +1,314 @@
+{
+  "timeline": {
+    "tracks": [
+      {
+        "clips": [
+
+          {
+            "asset": {
+              "type": "html",
+              "html": "<p> {{ Region }} </p>",
+              "css": "p { font-family: \"Manrope ExtraBold\"; color: #fff; font-size: 45px; text-align: left;    line-height: 78; }",
+              "width": 320,
+              "height": 200,
+              "position": "bottom"
+            },
+            "start": 1.2,
+            "length": 4.2,
+            "position": "left",
+            "offset": {
+              "x": 0.05,
+              "y": 0.2
+            },
+            "transition": {
+              "in": "slideRight",
+              "out": "slideLeft"
+            }
+          },
+
+
+          {
+            "asset": {
+              "type": "html",
+              "html": "<p> {{ Genre }} </p>",
+              "css": "p { font-family: \"Manrope ExtraBold\"; color: #fff; font-size: 22px; text-align: left;    line-height: 78; }",
+              "width": 320,
+              "height": 100,
+              "position": "top"
+            },
+            "start": 1.4,
+            "length": 4,
+            "position": "left",
+            "offset": {
+              "x": 0.05,
+              "y": -0.24
+            },
+            "transition": {
+              "in": "slideRight",
+              "out": "slideLeft"
+            }
+          }
+
+        ]
+      },
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "image",
+              "src": "https://templates.shotstack.io/basic/asset/image/icon/slimline/white/26px/bed.png"
+            },
+            "start": 1.4,
+            "length": 4,
+            "fit": "none",
+            "position": "left",
+            "offset": {
+              "x": 0.055,
+              "y": -0.025
+            },
+            "transition": {
+              "in": "fade",
+              "out": "fade"
+            }
+          },
+
+          {
+            "asset": {
+              "type": "image",
+              "src": "https://templates.shotstack.io/basic/asset/image/icon/slimline/white/26px/bath.png"
+            },
+            "start": 1.4,
+            "length": 4,
+            "fit": "none",
+            "position": "left",
+            "offset": {
+              "x": 0.13,
+              "y": -0.025
+            },
+            "transition": {
+              "in": "fade",
+              "out": "fade"
+            }
+          },
+          {
+            "asset": {
+              "type": "html",
+              "html": "<p> {{ Bed }} </p>",
+              "css": "p { font-family: \"Manrope ExtraBold\"; color: #ffffff; font-size: 18px; text-align: left;     }",
+              "width": 36,
+              "height": 26,
+              "position": "center"
+            },
+            "start": 1.4,
+            "length": 4,
+            "position": "left",
+            "offset": {
+              "x": 0.09,
+              "y": -0.025
+            },
+            "transition": {
+              "in": "fade",
+              "out": "fade"
+            }
+          },
+          {
+            "asset": {
+              "type": "html",
+              "html": "<p> {{ Bath }} </p>",
+              "css": "p { font-family: \"Manrope ExtraBold\"; color: #ffffff; font-size: 18px; text-align: left;     }",
+              "width": 36,
+              "height": 26,
+              "position": "center"
+            },
+            "start": 1.4,
+            "length": 4,
+            "position": "left",
+            "offset": {
+              "x": 0.165,
+              "y": -0.025
+            },
+            "transition": {
+              "in": "fade",
+              "out": "fade"
+            }
+          }
+        ]
+      },
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "luma",
+              "src": "https://shotstack-assets.s3-ap-southeast-2.amazonaws.com/luma-mattes/circle.jpg"
+            },
+            "start": 30,
+            "length": 6
+          },
+          {
+            "asset": {
+              "type": "image",
+              "src": "https://117482.b.aliquando.immo/files/2019/03/banniere_portrait.png"
+            },
+            "start": 30,
+            "length": 6,
+            "fit": "none",
+            "scale": 0.4,
+            "offset": {
+              "x": 0,
+              "y": 0.22
+            },
+            "transition": {
+              "in": "fade"
+            }
+          }
+        ]
+      },
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "html",
+              "html": "<p>SAMUEL JACQUE</p>",
+              "css": "p { font-family: \"Manrope ExtraBold\"; color: #f0c20c; font-size: 26px; text-align: center;     }",
+              "width": 600,
+              "height": 36,
+              "position": "center"
+            },
+            "start": 30,
+            "length": 6,
+            "offset": {
+              "x": 0,
+              "y": 0.045
+            },
+            "transition": {
+              "in": "fade"
+            }
+          },
+          {
+            "asset": {
+              "type": "html",
+              "html": "<p>401 Laviolette Saint-Jérôme <br> 450-438-6868</p>",
+              "css": "p { font-family: \"Manrope Light\"; color: #ffffff; font-size: 18px; text-align: center;     }",
+              "width": 600,
+              "height": 64,
+              "position": "center"
+            },
+            "start": 30,
+            "length": 6,
+            "offset": {
+              "x": 0,
+              "y": -0.24
+            },
+            "transition": {
+              "in": "fade"
+            }
+          }
+        ]
+      },
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "image",
+              "src": "https://samuelj.ca/files/2019/03/Royale2.png"
+            },
+            "start": 30,
+            "length": 6,
+            "fit": "contain",
+            "scale": 0.20,
+            "offset": {
+              "x": 0,
+              "y": -0.08
+            },
+            "transition": {
+              "in": "fade"
+            }
+          }
+        ]
+      },
+
+
+
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "image",
+              "src": "{{ PicUrl1 }}"
+            },
+            "start": 0,
+            "length": 4,
+            "effect": "zoomInSlow",
+            "transition": {
+              "in": "fade"
+            }
+          },
+          {
+            "asset": {
+              "type": "image",
+              "src": " {{ PicUrl2 }} "
+            },
+            "start": 4,
+            "length": 4,
+            "effect": "slideLeftSlow"
+          },
+          {
+            "asset": {
+              "type": "image",
+              "src": " {{ PicUrl3 }} "
+            },
+            "start": 8,
+            "length": 4,
+            "effect": "slideRightSlow"
+          },
+          {
+            "asset": {
+              "type": "image",
+              "src": " {{ PicUrl4 }} "
+            },
+            "start": 12,
+            "length": 4,
+            "effect": "slideUpSlow"
+          },
+          {
+            "asset": {
+              "type": "image",
+              "src": " {{ PicUrl5 }} "
+            },
+            "start": 16,
+            "length": 4,
+            "effect": "slideLeftSlow"
+          },
+          {
+            "asset": {
+              "type": "image",
+              "src": "https://samuelj.ca/files/2019/03/banniere_background1.jpg"
+            },
+            "start": 20,
+            "length": 8,
+            "effect": "zoomInSlow"
+          }
+
+        ]
+      }
+
+    ],
+
+    "fonts": [
+      {
+        "src": "https://templates.shotstack.io/basic/asset/font/manrope-extrabold.ttf"
+      },
+      {
+        "src": "https://templates.shotstack.io/basic/asset/font/manrope-light.ttf"
+      }
+    ],
+    "soundtrack": {
+      "src": "https://shotstack-assets.s3.ap-southeast-2.amazonaws.com/music/unminus/ambisax.mp3",
+      "effect": "fadeOut"
+    }
+  },
+  "output": {
+    "format": "mp4",
+    "resolution": "sd"
+  }
+}
