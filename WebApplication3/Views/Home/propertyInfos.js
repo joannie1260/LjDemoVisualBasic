@@ -43,7 +43,51 @@ async function getPropertyInfos() {
 
 }
 
+class LocalAPI {
 
+    constructor() {
+        this.basePath = 'https://localhost:44353/API/';
+    }
+
+    post($endpoint, $params = null) {
+        return this.call($endpoint, $params, {method: 'POST'});
+    }
+
+    get($endpoint, $params = null) {
+        return this.call($endpoint, $params);
+    }
+
+    call($endpoint, $params = null, $options = null) {
+        const fetchOptions = Object.assign({
+            url: `${this.basePath}/${$endpoint}`,
+            method: 'GET',
+            headers: {
+
+            }
+        }, $options);
+
+        if (fetchOptions.method == 'GET') {
+            fetchOptions.params = $params;
+        }
+        else {
+            fetchOptions.data = $params;
+        }
+
+        return Promise(($resolve, $reject) => {
+            fetch(fetchOptions).then($response => {
+                if ($resonse.status == 200) {
+                    return $response.json();
+                }
+                else {
+                    $reject('Call failed');
+                }
+            })
+                .then($jsonResult => {
+                    $resolve($jsonResult);
+                })
+        });
+    }
+}
 
 
 

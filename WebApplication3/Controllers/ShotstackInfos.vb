@@ -1,25 +1,66 @@
-﻿Public Class ShotstackInfos
+﻿Imports Microsoft.VisualBasic
 
-    Private Sub PostCall()
+Public Class ShotstackInfos
+    Public Class Asset
+        Public Property type As String
+        Public Property html As String
+        Public Property css As String
+        Public Property width As Integer
+        Public Property height As Integer
+        Public Property position As String
+        Public Property src As String
+    End Class
 
-        Dim client = New RestClient("https://api.shotstack.io/stage/render")
-        Dim request = New RestRequest(Method.Post)
-        request.AddHeader("cache-control", "no-cache")
-        request.AddHeader("content-type", "application/json")
-        request.AddHeader("x-api-key", "qDiyycLgsc8xI1kdKIGn84D4x4hyOIhk15qFtljm")
-        Dim response As RestResponse = client.Execute(request)
-        Console.WriteLine(response)
+    Public Class Offset
+        Public Property x As Double
+        Public Property y As Double
+    End Class
 
-    End Sub
-    Private Sub GetRender()
-        Dim idShotstack = "qDiyycLgsc8xI1kdKIGn84D4x4hyOIhk15qFtljm"
-        Dim client = New RestClient("https://api.shotstack.io/stage/render/" & idShotstack & "?timeline=false")
-        Dim request = New RestRequest(Method.[Get])
-        request.AddHeader("x-api-key", "qDiyycLgsc8xI1kdKIGn84D4x4hyOIhk15qFtljm")
-        Dim response As RestResponse = client.Execute(request)
-        Console.WriteLine(response.Content)
+    Public Class Transition
+        Public Property [in] As String
+        Public Property out As String
+    End Class
 
-    End Sub
+    Public Class Clip
+        Public Property asset As Asset
+        Public Property start As Double
+        Public Property length As Double
+        Public Property position As String
+        Public Property offset As Offset
+        Public Property transition As Transition
+        Public Property fit As String
+        Public Property scale As Double?
+        Public Property effect As String
+    End Class
+
+    Public Class Track
+        Public Property clips As Clip()
+    End Class
+
+    Public Class Font
+        Public Property src As String
+    End Class
+
+    Public Class Soundtrack
+        Public Property src As String
+        Public Property effect As String
+    End Class
+
+    Public Class Timeline
+        Public Property tracks As Track()
+        Public Property fonts As Font()
+        Public Property soundtrack As Soundtrack
+    End Class
+
+    Public Class Output
+        Public Property format As String
+        Public Property resolution As String
+    End Class
+
+    Public Class ShotstackInfos
+        Public Property timeline As Timeline
+        Public Property output As Output
+    End Class
 
 
 End Class

@@ -186,7 +186,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.vb" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.vb" />
     <Compile Include="Controllers\ShotstackInfos.vb" />
-    <Compile Include="Controllers\PropertyInfos.vb" />
+    <Compile Include="Controllers\Listings.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -267,10 +267,8 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-    <Content Include="Views\Home\main.js" />
     <Content Include="Views\Home\ShotstackInfos.js" />
     <Content Include="Views\Home\propertyInfos.js" />
-    <Content Include="Views\Home\Style.scss" />
     <Content Include="Views\Home\template.json" />
   </ItemGroup>
   <ItemGroup>
