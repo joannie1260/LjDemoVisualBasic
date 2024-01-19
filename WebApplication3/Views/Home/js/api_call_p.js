@@ -11,7 +11,7 @@
     async function getApiProperty(){
         
         let id = document.getElementById("id").value
-        const urlProprety = 'https://als.id-3.net/api2/property/getrawdata?id=' + id
+        const urlProprety = '' + id
         
         let response = await fetch(urlProprety)
         let data = await response.json()
